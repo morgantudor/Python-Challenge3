@@ -22,15 +22,13 @@ with open(election_data_csv, 'r') as csvfile:
         candidate = row["Candidate"]
         if candidate not in candidates:
             candidates.append(candidate)
-            candidate_votes[candidate] = 1
+            candidate_votes[candidate] = 0
         
-        candidate_votes[candidate] = candidate_votes[candidate] + 1
+        candidate_votes[candidate] += 1
             
 #Find the percentage of votes each candidate won
 for candidate in candidate_votes:
     votes = candidate_votes[candidate]
-    vote_percent = (votes / total_votes) * 100 
-    rounded_vote_percent = round(vote_percent, 3)
     
 #Find the winner of the election based on popular vote
     if votes > votes_winner:    
