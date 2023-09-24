@@ -4,7 +4,7 @@
 ## Description
 Analyzed bank information and election results using Python tools - output generated averages, changes in profit/losses, election results, etc.
 
-![app_image](images/.png)
+![app_image](images/mockup.png)
 
 ## Table of Contents
 - [Installation](#installation)
